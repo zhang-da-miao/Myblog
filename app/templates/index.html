@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+    {% block content %}
+    {% if current_user.username %}
+    <h1>Hello, {{current_user.username}}!</h1>
+    {% else %}
+    <h1>Welecome,my new friend!</h1>
+    {% endif%}
+    {% for post in posts%}
+        <div><p>{{post.author.username}} said:<b>{{post.body}}</b></p></div>
+    {% endfor %}
+    {% endblock %}
