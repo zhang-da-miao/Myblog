@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'base.html' %}
+{% block content %}
+<article>
+    <h1>{{title}}</h1>
+    <p>作者：{{author}}</p>
+    <p>{{body}}</p>
+</article>
+{% endblock %}

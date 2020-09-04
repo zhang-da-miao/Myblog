@@ -1,5 +1,5 @@
-from bin.app import db
-from bin.app.models import User, Post
+from app import db
+from app.models import User, Post
 
 usernames = ["Mapel", "Mana", "Lick"]
 emails = [i + "@123.com" for i in usernames]

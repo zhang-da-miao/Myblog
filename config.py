@@ -37,9 +37,13 @@ BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 
 
 class Config(object):
+    # 设置环境，有开发环境，测试环境，生产环境
+    ENV = 'development'
+    # 允许调试
+    DEBUG = True
     # 密钥
     SECRET_KEY = "never-guess"
-    # mysql+pymysql://数据库用户名：密码2数据库地址：端口号/数据库名称？数据库格式
+    # mysql+pymysql://数据库用户名：密码@数据库地址：端口号/数据库名称？数据库格式
     # 其中数据库需要提前创建好
     SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:mapel10086@localhost:3306/myblog?charset=utf8'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
